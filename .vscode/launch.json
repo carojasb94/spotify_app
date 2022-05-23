@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+      {
+        "name": "Launch TESTS",
+        "type": "python",
+        "request": "launch",
+        "mode": "test",
+        "cwd": "${workspaceFolder}",
+        "showLog": true,        
+        "program": "${relativeFileDirname}",
+        //"args": [
+        //  "-func=${cover_profile}",
+        //  // test function name
+        //  // * can use reguler expression
+        //  // * NOT include "Test"
+        //  // * the first charactor MUST be small
+        //  ".cover/profile.out"
+        //]
+      },
+      {
+        "name": "Launch Project",
+        "type": "python",
+        "request": "launch",
+        "justMyCode":false,        
+        "mode": "debug",
+        "cwd": "${workspaceFolder}",
+        "program": "${workspaceFolder}/main.py"
+      }      
+    ]
+  }
